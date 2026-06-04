@@ -4,6 +4,7 @@
 
 # Function 1 Analysis
 
+```python
 def function1(number):
     total = 0
 
@@ -12,7 +13,7 @@ def function1(number):
         total += x * x
 
     return total
-
+```
 The loop runs 'number' times.
 
 The line (total += x * x) executes 'number' times and actually adds the squares of all numbers from 1 to the specified number
@@ -26,10 +27,10 @@ Therefore the running time grows linearly with the input size.
 
 # Function 2 Analysis
 
-
+```python
 def function2(number):
     return (number * (number + 1) * (2 * number + 1)) // 6
-
+```
 
 This function does not have any loops. So It only runs one time and performs one arithmetic formula.
 
@@ -39,7 +40,7 @@ This function does not have any loops. So It only runs one time and performs one
 
 # Function 3 Analysis
 
-
+```python
 def function3(list):
     n = len(list)
 
@@ -49,6 +50,7 @@ def function3(list):
                 tmp = list[j]
                 list[j] = list[j+1]
                 list[j + 1] = tmp
+```
 
 The outer loop runs 'n - 1' times.
 
@@ -62,6 +64,7 @@ After removing constants and lower-order terms,
 
 # Function 4 Analysis
 
+```python
 def function4(number):
     total = 1
 
@@ -69,6 +72,7 @@ def function4(number):
         total *= i + 1
 
     return total
+```
 
 The loop runs number - 1 times which is actually a factorial formula. 
 
