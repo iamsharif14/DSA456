@@ -1,4 +1,3 @@
-```md
 # PART B: Big-O Analysis
 
 **n = the number of nodes in the linked list**
@@ -92,4 +91,3 @@
 **O(n)**
 
 **Reason:** It visits every node and prints each value.
-```
